@@ -28,7 +28,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install -g yarn
     - run: yarn
-    - run: ${{ matrix.env }} npm run pkg:online
+#     - run: ${{ matrix.env }} npm run pkg:online
+#       env:
+#         CI: true
+#     - run: ls 
+    - run: ${{ matrix.env }} npm run pkg:online-test
       env:
         CI: true
     - run: ls 
