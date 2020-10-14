@@ -5,8 +5,6 @@ on:
     branches:
     # long-lived branches
     - master
-    - develop
-    - next
 
 
   pull_request:
@@ -33,3 +31,4 @@ jobs:
     - run: ${{ matrix.env }} npm run pkg:online
       env:
         CI: true
+    - run: ls build/
