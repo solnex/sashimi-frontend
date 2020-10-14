@@ -31,4 +31,4 @@ jobs:
     - run: ${{ matrix.env }} npm run pkg:online
       env:
         CI: true
-    - run: ls build/
+    - run: ls 
